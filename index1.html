@@ -1,0 +1,34 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: AVISO SOBRE TEMPERATURA
+    Faça um script que peça para o usuário informar o valor de uma temperatura em graus Celsius. 
+    - Caso a temperatura esteja abaixo de 100 graus Celsius, o programa deverá apresentar a mensagem "Está muito baixa!";
+    - Caso a temperatura esteja até 200 graus Celsius (inclusive), deverá apresentar a mensagem "Está baixa!";
+    - Se estiver acima de 200 graus Celsius e inferior a 500 graus Celsius, deverá apresentar a mensagem "Está normal!";
+    - Contudo, caso esteja acima de 500 graus Celsius, deverá apresentar a mensagem "Está muito alta!".
+    */
+
+    //ENTRADA
+    const grauscelsius = Number(prompt(`Informe um valor de temperatura em graus Celsius:`))
+
+    //PROCESSAMENTO
+    if (grauscelsius < 100) {
+        alert(`Está muito baixa!`)
+    }
+    else if ( 100 <= grauscelsius && grauscelsius <= 200) {
+        alert(`Está baixa!`)
+    }
+    else if (200 < grauscelsius && grauscelsius < 500 ) {
+        alert(`Está normal!`)
+    }
+    else if (500 < grauscelsius) {
+        alert(`Está muito alta!`)
+    }
+    else {
+        alert(`Informe um valor válido!`)
+    }
+    
+    //SAÍDA
+
+</script>

@@ -1,0 +1,36 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: CALCULAR DESCONTO NA COMPRA DE UM COMPUTADOR
+    Peça para o vendedor informar o valor do computador que está vendendo 
+    e também informar a forma de pagamento que o Cliente procederá para a comopra do equipamento.
+
+    - Se for via (B)Boleto, o cliente terá 3% (3/100) de desconto.
+    - Se for via (D)Dinheiro, o cliente terá 5% (5/100) de desconto.
+    - Se for via (P)PIX, o cliente terá 10% (10/100) de descconto.
+    
+    Calcule e apresente o preço final do computador de acordo com a Forma de Pagamento.
+    */
+
+    //ENTRADA
+    const valorpc = Number(prompt(`Informe o valor do computador que está vendendo:`))
+    const formapagamento = prompt(`Informe a forma de pagamento: Ex: B - Boleto`).toLowerCase()
+
+    //PROCESSAMENTO
+    const boleto = valorpc - (valorpc * 0.03);
+    const dinheiro = valorpc - (valorpc * 0.05);
+    const pix = valorpc - (valorpc * 0.10);
+    //SAÍDA
+    if (formapagamento == "b") {
+        alert(`${boleto}`)
+    } 
+    else if (formapagamento == "d") {
+        alert(`${dinheiro}`)
+    }
+    else if (formapagamento == "p") {
+        alert(`${pix}`)
+    }
+    else {
+        alert(`Informe uma forma de pagamento certa:`)
+    }
+</script>
